@@ -36,11 +36,11 @@ function direction = triangle_direction(M,K) %M will be a 3x4 matrix denoting th
 	end
 
 	if(sum(sum(neigbourhood_region2)) > 1) %to check if there is more than one 1's in the neigbourhood(the one '1' will come from the minutiae itself)
-		v1 = 0;
+		v2 = 0;
 	end
 
 	if(sum(sum(neigbourhood_region3)) > 1) %to check if there is more than one 1's in the neigbourhood(the one '1' will come from the minutiae itself)
-		v1 = 0;
+		v3 = 0;
 	end
 
 	direction = 4 * v1 + 2 * v2 + v3; % 0 <= direction <= 7
